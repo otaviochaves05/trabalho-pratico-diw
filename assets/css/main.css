@@ -1,0 +1,48 @@
+/*inicializando css*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    /*header*/
+    header {
+        padding-top: 24px;
+        border: 1px solid;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav h2 {
+        font-size: 300%;
+    }
+    nav h2 a{
+        text-decoration: none;
+        color: black;
+    }
+    #secoes {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    #secoes li {
+       padding: 0 24px;
+    }
+
+    #secoes li a {
+        text-decoration: none;
+        font-size: 200%;
+    }
+}
