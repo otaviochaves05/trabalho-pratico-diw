@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-}
 
 @media screen and (min-width: 768px) {
     /*header*/
@@ -43,9 +40,47 @@ img {
 
     /*Perfil*/
     #perfil{
-        margin: 0 64px;
+        margin: 0 64px; 
+    }
+    #perfil h2{ 
         border-bottom: 1px solid black;
     }
+    #foto-perfil{
+        padding: 5px;
+        border: 1px solid gray;
+        border-radius: 8px;
+    }
+    #conteudo-perfil{
+        display: flex;
+    }
+    #nome-perfil{
+        font-size: 100%;
+        color: rgb(0, 94, 255);
+    }
+    #site a{
+        text-decoration: none;
+        color: black;
+    }
+    #site a:hover{
+        text-decoration: underline;
+        color: rgb(0, 94, 255);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*Repositorios*/
     #repositorios{
