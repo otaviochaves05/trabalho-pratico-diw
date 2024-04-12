@@ -11,19 +11,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-
     /*header*/
     header {
         padding-top: 24px;
-        border: 1px solid;
     }
-
     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-
     nav h2 {
         font-size: 300%;
     }
@@ -40,9 +36,37 @@ img {
     #secoes li {
        padding: 0 24px;
     }
-
     #secoes li a {
         text-decoration: none;
         font-size: 200%;
+    }
+
+    /*Perfil*/
+    #perfil{
+        margin: 0 64px;
+        border-bottom: 1px solid black;
+    }
+
+    /*Repositorios*/
+    #repositorios{
+        margin: 0 64px;
+        border-bottom: 1px solid black;
+    }
+
+
+
+    /*Conteudo Sugerido*/
+    #conteudo{
+        margin: 0 64px;
+        border-bottom: 1px solid black;
+    }
+
+
+
+
+    /*Colegas de trabalho*/
+    #colegas{
+        margin: 0 64px;
+        border-bottom: 1px solid black;
     }
 }
