@@ -48,7 +48,7 @@
     #foto-perfil{
         padding: 5px;
         border: 1px solid gray;
-        border-radius: 8px;
+        border-radius: 8px;   
     }
     #conteudo-perfil{
         display: flex;
@@ -65,43 +65,74 @@
         text-decoration: underline;
         color: rgb(0, 94, 255);
     }
+    #container-perfil-1{
+        margin: auto;
+    }
+    #container-perfil-3{
+        display: flex;
+        justify-content: space-between;   
+    }
+    #container-perfil-4{
+        font-size: 200%;
+    }
+    .icone{
+        display: flex;
+        justify-content: space-between;
+    }
+    #icone-perfil{
+        font-size: 200%;    
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*Repositorios*/
+  /*Repositorios*/
     #repositorios{
         margin: 0 64px;
+    }
+    #repositorios h2{
         border-bottom: 1px solid black;
     }
+    #conteudo-repositorios{
+        padding: 8px 0;
+    }
+    .card-footer{
+        display: flex;
+        justify-content: space-around;        
+    }
+
+    .fa-regular.fa-user{
+        font-size: 125%;
+    }
+    .fa-regular.fa-star{
+        font-size: 125%;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
     /*Conteudo Sugerido*/
     #conteudo{
         margin: 0 64px;
+    }
+    #conteudo h2{
         border-bottom: 1px solid black;
     }
-
 
 
 
     /*Colegas de trabalho*/
     #colegas{
         margin: 0 64px;
+    }
+    #colegas h2{
         border-bottom: 1px solid black;
     }
 }
