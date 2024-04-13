@@ -18,7 +18,7 @@
         justify-content: space-around;
     }
     nav h2 {
-        font-size: 300%;
+        font-size: 250%;
     }
     nav h2 a{
         text-decoration: none;
@@ -35,19 +35,20 @@
     }
     #secoes li a {
         text-decoration: none;
-        font-size: 200%;
+        font-size: 150%;
     }
 
     /*Perfil*/
     #perfil{
-        margin: 0 64px; 
+        margin: 0 64px;
+        margin-bottom: 16px; 
     }
     #perfil h2{ 
         border-bottom: 1px solid black;
     }
     #foto-perfil{
-        padding: 5px;
-        border: 1px solid gray;
+        padding: 4px;
+        border: 1px solid black;
         border-radius: 8px;   
     }
     #conteudo-perfil{
@@ -87,6 +88,7 @@
   /*Repositorios*/
     #repositorios{
         margin: 0 64px;
+        margin-bottom: 16px;
     }
     #repositorios h2{
         border-bottom: 1px solid black;
@@ -121,6 +123,7 @@
     /*Conteudo Sugerido*/
     #conteudo{
         margin: 0 64px;
+        margin-bottom: 16px;
     }
     #conteudo h2{
         border-bottom: 1px solid black;
@@ -130,9 +133,25 @@
 
     /*Colegas de trabalho*/
     #colegas{
-        margin: 0 64px;
+        margin: 0 64px; 
+        margin-bottom: 16px;     
     }
     #colegas h2{
         border-bottom: 1px solid black;
     }
-}
+    .fotos{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        padding: 24px 0 24px 0;
+    }
+    .fotos img{
+        padding: 4px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    
+
+
+
+}   
