@@ -50,7 +50,7 @@
     #conteudo-perfil{
         display: flex;
     }
-    #nome-perfil{
+    .nome-perfil{
         font-size: 100%;
         color: rgb(0, 94, 255);
     }
@@ -72,13 +72,11 @@
     #container-perfil-4{
         font-size: 200%;
     }
-    .icone{
+    .icone-container-3{
         display: flex;
         justify-content: space-between;
     }
-    #icone-perfil{
-        font-size: 200%;    
-    }
+
   /*Repositorios*/
     #repositorios{
         margin: 0 64px;
@@ -95,11 +93,13 @@
         justify-content: space-around;        
     }
     .fa-regular.fa-user{
-        font-size: 125%;
+        font-size: 150%;
     }
     .fa-regular.fa-star{
-        font-size: 125%;
+        font-size: 150%;
     }
+
+
     /*Conteudo Sugerido*/
     #conteudo{
         margin: 0 64px;
@@ -126,5 +126,33 @@
         padding: 4px;
         border: 1px solid black;
         border-radius: 8px;
+    }
+
+    /*Pagina repositorio*/
+    #descricao-repo{
+        margin: 0 64px;
+        margin-bottom: 16px;
+    }
+    #descricao-repo h2{
+        border-bottom: 1px solid black;
+    }
+    p a{
+        text-decoration: none;
+        color:black;
+    }
+    p a:hover{
+        text-decoration: underline;
+        color: rgb(0, 94, 255);
+    }
+    .icone{
+        display: flex;
+        flex-direction: column;
+    }
+    .icone i{
+        margin: 8px 0;
+        margin-right: 64px;
+    }
+    .icone.fa-regular.fa-star{
+        font-size: 200%;
     }
 }   
