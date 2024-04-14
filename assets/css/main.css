@@ -76,6 +76,10 @@
         display: flex;
         justify-content: space-between;
     }
+    .link{
+        text-decoration: none;
+        color: rgb(26, 25, 25);
+    }
 
   /*Repositorios*/
     #repositorios{
