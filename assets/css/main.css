@@ -160,3 +160,7 @@
         font-size: 200%;
     }
 }   
+
+@media screen and (max-width: 767px){
+    
+}
