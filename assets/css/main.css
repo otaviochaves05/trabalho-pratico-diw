@@ -5,151 +5,341 @@
     border: 0;
     box-sizing: border-box;
 }
+
 @media screen and (min-width: 768px) {
+
     /*header*/
-    header{
-        background-color: #4371a8;
+    header {
+        margin-bottom: 16px;
     }
 
-    /*menu mobile*/
-    #menu-toggle{
-        display: none;
+    .nav-link {
+        color: black;
     }
-    .menu-icon {
-        display: none;
-    }
-    
+
     /*Perfil*/
-    #perfil{
+    #perfil {
         margin: 0 64px;
-        margin-bottom: 16px; 
+        margin-bottom: 16px;
     }
-    #perfil h2{ 
+
+    #perfil h2 {
         border-bottom: 1px solid black;
     }
-    #foto-perfil{
+
+    #foto-perfil {
         padding: 4px;
         border: 1px solid black;
-        border-radius: 8px;   
+        border-radius: 8px;
     }
-    #conteudo-perfil{
+
+    #conteudo-perfil {
         display: flex;
     }
-    .nome-perfil{
+
+    .nome-perfil {
         font-size: 100%;
-        color: rgb(0, 94, 255);
+        color: black;
     }
-    #site a{
+
+    #site a {
         text-decoration: none;
         color: black;
     }
-    #site a:hover{
-        text-decoration: underline;
-        color: rgb(0, 94, 255);
-    }
-    #container-perfil-1{
+
+    #container-perfil-1 {
         margin: auto;
     }
-    #container-perfil-3{
-        display: flex;
-        justify-content: space-between;   
-    }
-    #container-perfil-4{
-        font-size: 200%;
-    }
-    #texto-perfil{
-        margin-left: 16px;
-    }
-    .icone-container-3{
+
+    #container-perfil-3 {
         display: flex;
         justify-content: space-between;
     }
-    .link{
+
+    #container-perfil-4 {
+        font-size: 200%;
+    }
+
+    #texto-perfil {
+        margin-left: 16px;
+    }
+
+    .icone-container-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .link {
         text-decoration: none;
         color: rgb(26, 25, 25);
     }
 
-  /*Repositorios*/
-    #repositorios{
+    /*Repositorios*/
+    #repositorios {
         margin: 0 64px;
         margin-bottom: 16px;
     }
-    #repositorios h2{
+
+    #repositorios h2 {
         border-bottom: 1px solid black;
     }
-    #conteudo-repositorios{
+
+    #conteudo-repositorios {
         padding: 8px 0;
     }
-    .card-footer{
+
+    .card-footer {
         display: flex;
-        justify-content: space-around;        
+        justify-content: space-around;
     }
-    .fa-regular.fa-user{
+
+    .fa-regular.fa-user {
         font-size: 150%;
     }
-    .fa-regular.fa-star{
+
+    .fa-regular.fa-star {
         font-size: 150%;
     }
 
 
     /*Conteudo Sugerido*/
-    #conteudo{
+    #conteudo {
         margin: 0 64px;
         margin-bottom: 16px;
     }
-    #conteudo h2{
+
+    #conteudo h2 {
         border-bottom: 1px solid black;
     }
+
     /*Colegas de trabalho*/
-    #colegas{
-        margin: 0 64px; 
-        margin-bottom: 16px;     
+    #colegas {
+        margin: 0 64px;
+        margin-bottom: 16px;
     }
-    #colegas h2{
+
+    #colegas h2 {
         border-bottom: 1px solid black;
     }
-    .fotos{
+
+    .fotos {
         display: flex;
         justify-content: center;
         gap: 16px;
         padding: 24px 0 24px 0;
     }
-    .fotos img{
+
+    .fotos img {
         padding: 4px;
         border: 1px solid black;
         border-radius: 8px;
     }
 
     /*Pagina repositorio*/
-    #descricao-repo{
+    #descricao-repo {
         margin: 0 64px;
         margin-bottom: 16px;
     }
-    #descricao-repo h2{
+
+    #descricao-repo h2 {
         border-bottom: 1px solid black;
     }
-    p a{
+
+    p a {
         text-decoration: none;
-        color:black;
+        color: black;
     }
-    p a:hover{
+
+    p a:hover {
         text-decoration: underline;
         color: rgb(0, 94, 255);
     }
-    .icone{
+
+    .icone {
         display: flex;
         flex-direction: column;
-    }    
-    .icone i{
-        margin: 8px 0;
-    
     }
-    .icone.fa-regular.fa-star{
+
+    .icone i {
+        margin: 8px 0;
+
+    }
+
+    .icone.fa-regular.fa-star {
         font-size: 200%;
     }
 
-}   
+}
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
+
+    /*Perfil*/
+    #perfil {
+        margin: 0 24px;
+        margin-bottom: 16px;
+    }
+
+    #perfil h2 {
+        border-bottom: 1px solid black;
+    }
+
+    #foto-perfil {
+        padding: 4px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+
+    #conteudo-perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nome-perfil {
+        font-size: 120%;
+        color: black;
+    }
+
+    #site a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #container-perfil-1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #container-perfil-2 #descricao {
+        text-align: justify;
+    }
+
+    #container-perfil-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #container-perfil-4 {
+        font-size: 250%;
+    }
+
+    #texto-perfil {
+        margin-left: 16px;
+    }
+
+    .icone-container-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .link {
+        text-decoration: none;
+        color: rgb(26, 25, 25);
+    }
+
+    /*Repositorios*/
+    #repositorios {
+        margin: 0 24px;
+        margin-bottom: 16px;
+    }
+
+    #repositorios h2 {
+        border-bottom: 1px solid black;
+    }
+
+    #conteudo-repositorios {
+        padding: 8px 0;
+    }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .fa-regular.fa-user {
+        font-size: 150%;
+    }
+
+    .fa-regular.fa-star {
+        font-size: 150%;
+    }
+
+
+    /*Conteudo Sugerido*/
+    #conteudo {
+        margin: 0 24px;
+        margin-bottom: 16px;
+    }
+
+    #conteudo h2 {
+        border-bottom: 1px solid black;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    /*Colegas de trabalho*/
+    #colegas {
+        margin: 0 24px;
+        margin-bottom: 16px;
+    }
+
+    #colegas h2 {
+        border-bottom: 1px solid black;
+    }
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 0 24px 0;
+    }
+
+    .fotos a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fotos img {
+        padding: 4px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+
+
+    /*Pagina repositorio*/
+    #descricao-repo {
+        margin: 0 24px;
+        margin-bottom: 16px;
+    }
+
+    #descricao-repo h2 {
+        border-bottom: 1px solid black;
+    }
+
+    p a {
+        text-decoration: none;
+        color: black;
+    }
+
+    p a:hover {
+        text-decoration: underline;
+        color: rgb(0, 94, 255);
+    }
+
+    .icone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icone i {
+        margin: 16px 0;
+    }
+
+    .icone.fa-regular.fa-star {
+        font-size: 200%;
+    }
 
 }
+
