@@ -8,46 +8,65 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/d88449eb36.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header id="cabecalho">
-        <nav id="nav-bar">
-            <h2 id="nome"><a href="index.html">Otávio Chaves</a></h2>
-            <ul id="secoes">
-                <li><a href="#">Seção 1</a></li>
-                <li><a href="#">Seção 2</a></li>
-                <li><a href="#">Seção 3</a></li>
-                <!--index.html/id-div-->
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md w-100 d-flex">
+            <div class="container-fluid">
+                <h1><a class="navbar-brand" href="index.html" style="font-size: 2.0rem">Otávio Chaves</a></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flexbox justify-content-end w-100" id="navbarNavAltMarkup">
+                    <div class="navbar-nav justify-content-evenly">
+                        <strong><a class="nav-link" href="#perfil">Perfil</a></strong>
+                        <strong><a class="nav-link" href="#repositorios">Repositórios</a></strong>
+                        <strong><a class="nav-link" href="#conteudo">Conteúdo sugerido</a></strong>
+                        <strong><a class="nav-link" href="#colegas">Colegas de trabalho</a></strong>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
             <div id="conteudo-perfil">
-                <div class="col-2" id="container-perfil">
-                    <img id="foto-perfil" src="assets/img/foto-perfil.jpg" alt="foto perfil" width="200px"
-                        height="200px">
+                <div id="container-perfil-1">
+                    <img id="foto-perfil" src="assets/img/foto-perfil.jpg" alt="foto perfil" height="250px">
                 </div>
-                <div class="col-10">
+                <div id="texto-perfil" class="col-10">
                     <div id="container-perfil-2">
-                        <p id="nome-perfil"><strong>Otavio Chaves Silva</strong></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consectetur quam inventore.
-                            Molestias
-                            quia dolore vero consequuntur ipsam porro error, mollitia sit inventore sint debitis,
-                            reiciendis
-                            ipsum repudiandae amet magnam aut nobis provident voluptas quod, repellat sunt vel corporis
-                            molestiae. Delectus itaque, dolor dolorem quasi quisquam adipisci. Qui, hic quos.</p>
+                        <p class="nome-perfil"><strong>Otávio Chaves Silva</strong></p>
+                        <p id="descricao">Graduando de Engenharia de Software pela PUC MINAS. <br> Busco sempre me
+                            capacitar da
+                            melhor
+                            maneira para realizar minhas tarefas e serviços, indo atrás de maior conhecimento sobre
+                            minha área de atuação.</p>
                     </div>
                     <div id="container-perfil-3">
-                        <div id="localizacao">
-                            <p><strong>Localização: </strong>Belo Horizonte/MG</p>
+                        <div>
+                            <p id="localizacao"><strong>Localização: </strong>Belo Horizonte/MG</p>
+                            <p id="site"><strong>Email: </strong>otaviocs2005@gmail.com</p>
                         </div>
-                        <div id="site">
-                            <p><strong>Site: </strong><a href="https://github.com/otaviochaves05">https://github.com/otaviochaves05</a></p>
+                        <div class="icone-container-3">
+                            <i class="fa-regular fa-user"> 3</i>
                         </div>
+                    </div>
+                    <div id="container-perfil-4">
+                        <a class="link" href="https://github.com/otaviochaves05" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="link" href="https://www.instagram.com/otaviochaves__/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="link" href="https://www.linkedin.com/in/otavio-chaves-silva/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -55,14 +74,132 @@
 
         <section id="repositorios">
             <h2>Repositórios</h2>
+            <div id="conteudo-repositorios" class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <a class="link" href="projetos-web.html" target="_blank">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">projetos-web</h5>
+                                <p class="card-text">Repositório com os projetos web que estou desenvolvendo durante
+                                    o
+                                    primeiro semestre de 2024.</p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-regular fa-star"> 0</i>
+                                <i class="fa-regular fa-user"> 1</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="link" href="trabalho-pratico-diw.html" target="_blank">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">trabalho-pratico-diw</h5>
+                                <p class="card-text">Repositorio para o projeto do Trabalho Pratico da disciplina de
+                                    Desenvolvimento de Interfaces WEB - Primeiro semestre.</p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-regular fa-star"> 0</i>
+                                <i class="fa-regular fa-user"> 1</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="link" href="javascript.html" target="_blank">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">javascript</h5>
+                                <p class="card-text">Repositório com os projetos para estudo e desenvolvimento das
+                                    minhas habilidades em JavaScript. </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-regular fa-star"> 0</i>
+                                <i class="fa-regular fa-user"> 1</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="link" href="aeds.html" target="_blank">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">aeds</h5>
+                                <p class="card-text">Repositório com os projetos realizados nas aulas de Algoritimos
+                                    e
+                                    Estruturas de Dados do curso Engenharia de Software da PUC MINAS.</p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-regular fa-star"> 0</i>
+                                <i class="fa-regular fa-user"> 1</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <section id="conteudo">
             <h2>Conteúdo Sugerido</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" style="height: auto; width: auto;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/foto1-carrossel.jpg" class="d-block w-100" alt="Tela com codigos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/foto2-carrossel.jpg" class="d-block w-100" alt="Ilustrativo programador">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/foto3-carrossel.jpg" class="d-block w-100" alt="Tela com codigos 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
 
         <section id="colegas">
             <h2>Colegas de trabalho</h2>
+            <div class="fotos">
+                <a href="https://github.com/BrunoAlves-Coelho" target="_blank">
+                    <img src="assets/img/foto-bruno.jpg" alt="Foto Bruno" class="colegas" width="250px" height="250px">
+                </a>
+                <a href="https://github.com/RafaelDePaiva" target="_blank">
+                    <img src="assets/img/foto-rafael.jpg" alt="Foto Rafael" class="colegas" width="250px"
+                        height="250px">
+                </a>
+                <a href="https://github.com/pedroMontandon" target="_blank">
+                    <img src="assets/img/foto-pedro.jpg" alt="Foto Pedro" class="colegas" width="250px" height="250px">
+                </a>
+                <a href="https://github.com/muriloAmachado" target="_blank">
+                    <img src="" alt="Foto Murilo" class="colegas" width="250px" height="250px">
+                </a>
+                <a href="https://github.com/jpvoliveira" target="_blank">
+                    <img src="assets/img/foto-joao.jpeg" alt="Foto João Pedro" class="colegas" width="250px"
+                        height="250px">
+                </a>
+                <a href="https://github.com/matheustitton" target="_blank">
+                    <img src="assets/img/foto-matheus.jpg" alt="Foto Matheus" class="colegas" width="250px"
+                        height="250px">
+                </a>
+            </div>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
