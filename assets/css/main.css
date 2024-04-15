@@ -7,43 +7,18 @@
 }
 @media screen and (min-width: 768px) {
     /*header*/
-    header {
-        padding-top: 24px;
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    nav h2 {
-        font-size: 250%;
-    }
-    nav h2 a{
-        text-decoration: none;
-        color: black;
+    header{
+        background-color: #4371a8;
     }
 
-    .menu {
-        display: flex;
-        align-items: center;
-        list-style-type: none;
-    }
-    .menu li {
-       padding: 0 24px;
-    }
-    .menu li a {
-        text-decoration: none;
-        font-size: 150%;
-    }
-    .fa.fa-bars{
-        display: none;
-    }
-    .fa.fa-times-circle{
-        display: none;
-    }
+    /*menu mobile*/
     #menu-toggle{
         display: none;
     }
+    .menu-icon {
+        display: none;
+    }
+    
     /*Perfil*/
     #perfil{
         margin: 0 64px;
@@ -164,10 +139,10 @@
     .icone{
         display: flex;
         flex-direction: column;
-    }
+    }    
     .icone i{
         margin: 8px 0;
-        margin-right: 64px;
+    
     }
     .icone.fa-regular.fa-star{
         font-size: 200%;
