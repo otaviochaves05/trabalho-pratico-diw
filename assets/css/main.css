@@ -111,6 +111,10 @@
     #conteudo h2 {
         border-bottom: 1px solid black;
     }
+    .carousel-inner img{
+        width: auto; 
+        height: 500px;
+    }
 
     /*Colegas de trabalho*/
     #colegas {
