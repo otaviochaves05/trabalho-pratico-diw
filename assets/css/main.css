@@ -118,8 +118,7 @@
 
     /*Colegas de trabalho*/
     #colegas {
-        margin: 0 64px;
-        margin-bottom: 16px;
+        margin: 0 64px 96px 64px ;
     }
 
     #colegas h2 {
@@ -137,6 +136,17 @@
         padding: 4px;
         border: 1px solid black;
         border-radius: 8px;
+    }
+
+    /*Footer*/
+    #footer {
+        background-color: #535353;
+        color: #fff;
+        text-align: center;
+        padding: 4px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 
     /*Pagina repositorio*/
@@ -309,6 +319,17 @@
         padding: 4px;
         border: 1px solid black;
         border-radius: 8px;
+    }
+    
+    /*Footer*/
+    #footer {
+        background-color: #535353;
+        color: #fff;
+        text-align: center;
+        padding: 4px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 
 
