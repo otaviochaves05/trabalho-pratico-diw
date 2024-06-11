@@ -1,9 +1,65 @@
 {
-    "colegas":[
+    "colegas": [
         {
             "id": 1,
-            "nome": "Murilo"
+            "nome": "Murilo",
+            "urlFoto": "../public/assets/img/foto-murilo.jpg",
+            "urlGitHub": "https://github.com/muriloAmachado"
+        },
+        {
+            "id": 2,
+            "nome": "Pedro",
+            "urlFoto": "../public/assets/img/foto-pedro.jpg",
+            "urlGitHub": "https://github.com/pedroMontandon"
+        },
+        {
+            "id": 3,
+            "nome": "Matheus",
+            "urlFoto": "../public/assets/img/foto-matheus.jpg",
+            "urlGitHub": "https://github.com/matheustitton"
+        },
+        {
+            "id": 4,
+            "nome": "Rafael",
+            "urlFoto": "../public/assets/img/foto-rafael.jpg",
+            "urlGitHub": "https://github.com/RafaelDePaiva"
+        }
+    ],
+    "conteudos": [
+        {
+            "id": 1,
+            "titulo": "MDN Mozilla Docs",
+            "descricao": "Site MDN",
+            "urlFoto": "../public/assets/img/mdn.jpg",
+            "urlSite": "https://developer.mozilla.org/pt-BR/"
+        },
+        {
+            "id": 2,
+            "titulo": "W3C Schools",
+            "descricao": "Site W3C",
+            "urlFoto": "../public/assets/img/w3schools.png",
+            "urlSite": "https://www.w3schools.com/"
+        },
+        {
+            "id": 3,
+            "titulo": "Alura Cursos",
+            "descricao": "Site Alura",
+            "urlFoto": "../public/assets/img/alura.jpg",
+            "urlSite": "https://www.alura.com.br/"
+        },
+        {
+            "id": 4,
+            "titulo": "Udemy Cursos",
+            "descricao": "Site Udemy",
+            "urlFoto": "../public/assets/img/udemy.png",
+            "urlSite": "https://www.udemy.com/"
+        },
+        {
+            "id": 5,
+            "titulo": "Cusro em Vídeo",
+            "descricao": "Youtube Curso em Vídeo",
+            "urlFoto": "../public/assets/img/curso-em-video.jpeg",
+            "urlSite": "https://www.cursoemvideo.com/"
         }
     ]
-    
 }

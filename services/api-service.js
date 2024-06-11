@@ -6,16 +6,28 @@ export class ApiService{
 
     }
 
-    async obterRepositorios(){
+    async obterDados() {
+        
+        const respostaDados = await fetch(`${this.urlBase}/users/otaviochaves05`);
 
-        const resposta = await fetch(`${this.urlBase}/users/otaviochaves05/repos`);
+        if (!respostaDados) {
+            throw new Error ("Não foi possível buscar os dados deste usuário");
+        } else {
+            return respostaDados.json();
+        }
 
-        if (!resposta) {
+    }
+
+    async obterRepositorios() {
+
+        const respostaRepositorios = await fetch(`${this.urlBase}/users/otaviochaves05/repos`);
+
+        if (!respostaRepositorios) {
             /*"Error" é nativo?*/
             throw new Error ("Não foi possível buscar os repositórios deste usuário");
         } else {
             /*json() é uma funcao que converte os dados em estrutura json?*/
-            return resposta.json();
+            return respostaRepositorios.json();
         }
 
     }    
