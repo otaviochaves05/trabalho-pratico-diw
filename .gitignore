@@ -1,1 +1,6 @@
+#diretorios
+node_modules
+
+
+#arquivos
 package-lock.json
