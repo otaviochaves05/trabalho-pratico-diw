@@ -10,7 +10,7 @@ export class ApiService{
         
         const respostaDados = await fetch(`${this.urlBase}/users/otaviochaves05`);
 
-        if (!respostaDados) {
+        if (!respostaDados.ok) {
             throw new Error ("Não foi possível buscar os dados deste usuário");
         } else {
             return respostaDados.json();
@@ -22,7 +22,7 @@ export class ApiService{
 
         const respostaRepositorios = await fetch(`${this.urlBase}/users/otaviochaves05/repos`);
 
-        if (!respostaRepositorios) {
+        if (!respostaRepositorios.ok) {
             /*"Error" é nativo?*/
             throw new Error ("Não foi possível buscar os repositórios deste usuário");
         } else {
@@ -31,6 +31,4 @@ export class ApiService{
         }
 
     }    
-
-
 }
