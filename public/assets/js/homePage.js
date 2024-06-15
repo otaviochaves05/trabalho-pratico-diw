@@ -21,6 +21,8 @@ async function carregaDados() {
 
 function popularDadosUsuario(userData) {
 
+    console.log(userData.email);
+
     const nome = document.querySelector(".nome-perfil");
     nome.innerHTML = `<strong>${userData.name}</strong>`;
 
@@ -67,6 +69,9 @@ function popularRepos(repos) {
     }
 
 }
+
+
+
 
 window.addEventListener('load', () => {
     carregaDados();
