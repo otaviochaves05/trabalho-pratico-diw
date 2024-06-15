@@ -20,9 +20,6 @@ async function carregaDados() {
     }
 }
 
-
-
-
 function popularDadosUsuario(userData) {
 
     const nome = document.querySelector(".nome-perfil");
@@ -37,18 +34,20 @@ function popularDadosUsuario(userData) {
     const minhaPaginaGit = document.querySelector("#minha-pagina");
     minhaPaginaGit.innerHTML = `Acesse minha pagina no Github clicando <strong><a href="${userData.html_url}">aqui</a></strong> ou no respectivo icone abaixo.`;
 
-    // const perfilIcons = document.querySelector("#container-perfil-4");
+    const perfilIcones = document.querySelector("#container-perfil-4");
+    perfilIcones.innerHTML =
+        ` <a class="link" href="${userData.html_url}" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a class="link" href="https://www.instagram.com/otaviochaves__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="link" href="${userData.blog}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>`;
 
-  
-
-
-   
+   const seguidores = document.querySelector(".icone-container-3");
+   seguidores.innerHTML = `<i class="fa-regular fa-user"> ${userData.followers}</i>`      
 }
 
 
 
 function popularRepos(repos) {
-
+    
 }
 
 
