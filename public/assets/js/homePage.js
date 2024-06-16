@@ -52,7 +52,7 @@ function popularRepos(repos) {
 
         reposSection.innerHTML += `
         <div class="col">
-        <a class="link" href="${repos[i].name}.html" target="_blank">
+        <a class="link" href="${repos[i].name}.html">
             <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">${repos[i].name}</h5>
@@ -69,7 +69,6 @@ function popularRepos(repos) {
     }
 
 }
-
 
 
 
