@@ -33,3 +33,36 @@ export class ApiService{
     } 
 }
 
+export class JsonService{
+
+    constructor() {
+
+        this.urlBase = "http://localhost:3000";
+
+    }
+
+    async obterJson(e) {
+        
+        const respostaDados = await fetch(`${this.urlBase}/${e}`);
+
+        if (!respostaDados.ok) {
+            throw new Error ("Não foi possível buscar os dados deste usuário");
+        } else {
+            return respostaDados.json();
+        }
+
+    }
+
+}
+
+
+
+// export const getDbJson = async (e) => {
+//     const endpoint = `http://localhost:3000/colegas`
+//     const response = await fetch(endpoint);
+//     if (!response.ok){
+//         console.log("Erro ao carregar os dados.")
+//     }
+//     const data = await response.json();
+//     return data
+// }

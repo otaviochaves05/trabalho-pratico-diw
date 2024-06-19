@@ -103,18 +103,19 @@
 
 
     /*Conteudo Sugerido*/
-    #conteudo {
-        margin: 0 64px;
-        margin-bottom: 16px;
-    }
 
     #conteudo h2 {
         border-bottom: 1px solid black;
+        margin: 0 64px;
+        margin-bottom: 16px;
     }
     .carousel-inner img{
-        width: auto; 
+        /* width: ;  */
         height: 500px;
     }
+
+
+
 
     /*Colegas de trabalho*/
     #colegas {

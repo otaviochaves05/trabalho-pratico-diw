@@ -1,17 +1,26 @@
-import { ApiService } from "../../../services/api-service.js";
+import { ApiService, JsonService } from "../../../services/api-service.js";
+
 
 async function carregaDados() {
     const apiService = new ApiService();
+    const jsonService = new JsonService();
 
     try {
         const userData = await apiService.obterDados();
         const repos = await apiService.obterRepositorios();
+        const colegas = await jsonService.obterJson("colegas");
+        const conteudo = await jsonService.obterJson("conteudos");
+
 
         console.log(userData);
         console.log(repos);
+        console.log(colegas);
+        console.log(conteudo);
 
         popularDadosUsuario(userData);
         popularRepos(repos);
+        popularConteudo(conteudo);
+        popularColegas(colegas);
 
     } catch (error) {
         console.error(error);
@@ -21,7 +30,7 @@ async function carregaDados() {
 
 function popularDadosUsuario(userData) {
 
-    console.log(userData.email);
+    // console.log(userData.email);
 
     const nome = document.querySelector(".nome-perfil");
     nome.innerHTML = `<strong>${userData.name}</strong>`;
@@ -42,7 +51,7 @@ function popularDadosUsuario(userData) {
           <a class="link" href="${userData.blog}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>`;
 
     const seguidores = document.querySelector(".icone-container-3");
-    seguidores.innerHTML = `<i class="fa-regular fa-user"> ${userData.followers}</i>`;     
+    seguidores.innerHTML = `<i class="fa-regular fa-user"> ${userData.followers}</i>`;
 }
 
 function popularRepos(repos) {
@@ -60,7 +69,7 @@ function popularRepos(repos) {
                 </div>
                 <div class="card-footer">
                     <i class="fa-regular fa-star"> ${repos[i].stargazers_count}</i>
-                    <i class="fa-regular fa-user"> 1</i>
+                    <i class="fa-regular fa-user"> ${repos[i].watchers_count}</i>
                 </div>
             </div>
             </a>
@@ -70,6 +79,49 @@ function popularRepos(repos) {
 
 }
 
+function popularConteudo(conteudo) {
+
+        let content = "";
+        for(let i = 0; i < conteudo.length; i++){
+            if(i==0){
+            content += `
+            <div class="carousel-item active">
+                <a href="${conteudo[i].urlSite}">
+                    <img src="${conteudo[i].urlFoto}" class="d-block w-100" style="opacity: 75%; max-height: 600px;" alt="s">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>${conteudo[i].titulo}</h5>
+                        <p>${conteudo[i].descricao}</p>
+                    </div>
+                </a>
+              </div>`
+            } else{
+              content += `
+              <div class="carousel-item">
+                <a href="${conteudo[i].urlSite}">
+                    <img src="${conteudo[i].urlFoto}" class="d-block w-100" style="opacity: 75%; max-height: 600px;" alt="s">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>${conteudo[i].titulo}</h5>
+                        <p>${conteudo[i].descricao}</p>
+                    </div>
+                </a>
+              </div>`
+            }
+        }
+        document.getElementById("carousel").innerHTML = content;
+}
+
+function popularColegas(colegas){
+
+    let content = "";
+    for (let i =0; i < colegas.length; i++){ 
+        content += `
+            <a href="${colegas[i].urlGitHub}">
+                <img src="${colegas[i].urlFoto}" alt="">
+            </a>
+            <p>${colegas[i].nome}</p>`
+    }
+    document.getElementById("fotos").innerHTML = content;
+}
 
 
 window.addEventListener('load', () => {

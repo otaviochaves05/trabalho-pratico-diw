@@ -21,44 +21,44 @@
         {
             "id": 4,
             "nome": "Rafael",
-            "urlFoto": "../public/assets/img/foto-rafael.jpg",
+            "urlFoto": "../assets/img/foto-rafael.jpg",
             "urlGitHub": "https://github.com/RafaelDePaiva"
         }
     ],
     "conteudos": [
         {
             "id": 1,
-            "titulo": "MDN Mozilla Docs",
-            "descricao": "Site MDN",
-            "urlFoto": "../public/assets/img/mdn.jpg",
-            "urlSite": "https://developer.mozilla.org/pt-BR/"
+            "titulo": "Alura Cursos",
+            "descricao": "Site Alura",
+            "urlFoto": "../assets/img/alura.jpg",
+            "urlSite": "https://www.alura.com.br/"
         },
         {
             "id": 2,
             "titulo": "W3C Schools",
             "descricao": "Site W3C",
-            "urlFoto": "../public/assets/img/w3schools.png",
+            "urlFoto": "../assets/img/w3schools.png",
             "urlSite": "https://www.w3schools.com/"
         },
         {
             "id": 3,
-            "titulo": "Alura Cursos",
-            "descricao": "Site Alura",
-            "urlFoto": "../public/assets/img/alura.jpg",
-            "urlSite": "https://www.alura.com.br/"
+            "titulo": "MDN Mozilla Docs",
+            "descricao": "Site MDN",
+            "urlFoto": "../assets/img/mdn.jpg",
+            "urlSite": "https://developer.mozilla.org/pt-BR/"
         },
         {
             "id": 4,
             "titulo": "Udemy Cursos",
             "descricao": "Site Udemy",
-            "urlFoto": "../public/assets/img/udemy.png",
+            "urlFoto": "../assets/img/udemy.png",
             "urlSite": "https://www.udemy.com/"
         },
         {
             "id": 5,
             "titulo": "Cusro em Vídeo",
             "descricao": "Youtube Curso em Vídeo",
-            "urlFoto": "../public/assets/img/curso-em-video.jpeg",
+            "urlFoto": "../assets/img/curso-em-video.jpeg",
             "urlSite": "https://www.cursoemvideo.com/"
         }
     ]
