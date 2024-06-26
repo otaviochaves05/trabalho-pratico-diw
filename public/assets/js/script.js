@@ -12,10 +12,10 @@ async function carregaDados() {
         const conteudo = await jsonService.obterJson("conteudos");
 
 
-        console.log(userData);
+        // console.log(userData);
         console.log(repos);
-        console.log(colegas);
-        console.log(conteudo);
+        // console.log(colegas);
+        // console.log(conteudo);
 
         popularDadosUsuario(userData);
         popularRepos(repos);
@@ -61,7 +61,7 @@ function popularRepos(repos) {
 
         reposSection.innerHTML += `
         <div class="col">
-        <a class="link" href="${repos[i].name}.html">
+        <a class="link" href="repositorios.html?id=${repos[i].id}">
             <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">${repos[i].name}</h5>
