@@ -45,24 +45,25 @@ function popularInfoRepos(repositorio, dataCriacao) {
     <p class="nome-perfil"><strong>Link de acesso</strong></p>
     <p><a
             href="${repositorio.html_url}">${repositorio.html_url}</a>
-    </p>
-    <p class="nome-perfil"><strong>Tópicos</strong></p>
-    <span class="badge text-bg-primary">BackEnd</span>
-    <span class="badge text-bg-primary">${repositorio.language}</span>
-    <span class="badge text-bg-primary">Algoritimos</span>
-    <span class="badge text-bg-primary">Lógica de programação</span>`
+    </p>`
 
+    const topicos = document.querySelector("#topicos");
+    for (let i = 0; i < repositorio.topics.length; i++){
+        topicos.innerHTML += `<span class="badge text-bg-primary">${repositorio.topics[i]}</span>`
+    }
+    
     const divIcons = document.querySelector(".icone");
     divIcons.innerHTML = `
     <i class="fa-regular fa-star"> ${repositorio.stargazers_count}</i>
     <i class="fa-regular fa-user"> ${repositorio.watchers_count}</i>`
-
+    
 }
 
 window.addEventListener('load', () => {
     carregaDadosRepo();
 });
 
+{/* <span class="badge text-bg-primary">BackEnd</span> */}
 
 
 

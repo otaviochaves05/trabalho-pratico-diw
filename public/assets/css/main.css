@@ -211,6 +211,14 @@
         font-size: 200%;
     }
 
+    #topicos{
+        display: flex;
+        gap: 8px;
+    }
+
+    #topicos span {
+        font-size: 95%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -421,6 +429,15 @@
 
     .icone.fa-regular.fa-star {
         font-size: 200%;
+    }
+
+    #topicos{
+        display: flex;
+        gap: 8px;
+    }
+
+    #topicos span {
+        font-size: 95%;
     }
 
 }
