@@ -14,7 +14,7 @@ async function carregaDados() {
 
         // console.log(userData);
         console.log(repos);
-        // console.log(colegas);
+        console.log(colegas);
         // console.log(conteudo);
 
         popularDadosUsuario(userData);
@@ -112,15 +112,22 @@ function popularConteudo(conteudo) {
 
 function popularColegas(colegas){
 
+    const secaoColegas = document.querySelector("#info-colegas");
+    
     let content = "";
-    for (let i =0; i < colegas.length; i++){ 
-        content += `
-            <a href="${colegas[i].urlGitHub}">
+    for (let i = 0; i < colegas.length; i++) {
+
+        content +=`
+        <a id="link-fotos" href="${colegas[i].urlGitHub}">
+            <div id="fotos" class="fotos">
                 <img src="${colegas[i].urlFoto}" alt="">
-            </a>
-            <p>${colegas[i].nome}</p>`
+                <p>${colegas[i].nome}</p>
+            </div>
+        </a>`
+
     }
-    document.getElementById("fotos").innerHTML = content;
+    secaoColegas.innerHTML = content;
+
 }
 
 

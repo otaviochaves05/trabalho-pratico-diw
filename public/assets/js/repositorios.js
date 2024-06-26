@@ -10,14 +10,9 @@ async function carregaDadosRepo() {
     try {
         const repoData = await apiService.obterRepositorios();
         const repoFiltrado = repoData.find(repo => repo.id == id);
-        if (repoFiltrado) {
             const repositorio = repoFiltrado;
             const dataCriacao = new Date(repositorio.created_at);
             popularInfoRepos(repositorio, dataCriacao);
-        } else {
-            console.error('Repositório não encontrado');
-            alert("Repositório não encontrado.");
-        }
     } catch (error) {
         console.error(error);
         alert("Erro ao buscar dados do repositório. Verifique o console para mais detalhes.");
@@ -99,52 +94,3 @@ window.addEventListener('load', () => {
 
 
 
-
-
-
-
-// import { ApiService } from "../../../services/api-service.js";
-
-
-// const url = new URL(window.location.href);
-// const params = new URLSearchParams(url.search);
-// const id = params.get('id');
-
-
-// async function carregaDadosRepo() {
-
-//     const apiService = new ApiService();
-
-
-//     const repoData = await apiService.obterRepositorios();
-//     const repoFiltrado = repoData.find(repoData => repoData.id == id);
-//     const repositorio = repoFiltrado;
-//     popularInfoRepos(repositorio, dataCriacao)
-
-//     console.error(error);
-//     alert("Erro ao buscar dados do usuário. Verifique o console para mais detalhes.");
-
-
-//     const dataCriacao = new Date(repositorio.created_at);
-//     function formatarData(data) {
-//         const day = data.getDate().toString().padStart(2, '0');
-//         const month = (data.getMonth() + 1).toString().padStart(2, '0');
-//         const year = data.getFullYear();
-//         return `${day}/${month}/${year}`
-//     }
-
-// }
-
-// function popularInfoRepos(repositorio, dataCriacao) {
-
-//     const nomeRepo = document.querySelector("#nome-repo");
-//     nomeRepo.innerText = repositorio.name;
-
-   
-
-// }
-
-// window.addEventListener('load', () => {
-//     carregaDadosRepo();
-//     popularInfoRepos();
-// });

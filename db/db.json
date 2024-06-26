@@ -3,19 +3,19 @@
         {
             "id": 1,
             "nome": "Murilo",
-            "urlFoto": "../public/assets/img/foto-murilo.jpg",
+            "urlFoto": "../assets/img/foto-murilo.jpg",
             "urlGitHub": "https://github.com/muriloAmachado"
         },
         {
             "id": 2,
             "nome": "Pedro",
-            "urlFoto": "../public/assets/img/foto-pedro.jpg",
+            "urlFoto": "../assets/img/foto-pedro.jpg",
             "urlGitHub": "https://github.com/pedroMontandon"
         },
         {
             "id": 3,
             "nome": "Matheus",
-            "urlFoto": "../public/assets/img/foto-matheus.jpg",
+            "urlFoto": "../assets/img/foto-matheus.jpg",
             "urlGitHub": "https://github.com/matheustitton"
         },
         {
